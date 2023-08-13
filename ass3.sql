@@ -83,6 +83,17 @@ FROM film
 WHERE title LIKE '%dog%' AND release_year <2005
 
 
+--List the first name and last name of customers whose last name starts with "M" and their first name has an "a" or "A" in the second position
+SELECT 
+	first_name,
+	last_name
+
+FROM customer
+WHERE last_name LIKE 'M%' AND (SUBSTRING(first_name, 2, 1) = 'a' OR SUBSTRING(first_name, 2, 1) = 'A')
+
+
+
+
 
 
 
