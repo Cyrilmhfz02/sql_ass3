@@ -31,6 +31,13 @@ FROM film
 WHERE title LIKE  '%Action%'
 
 
+--List the titles of movies that contain the word "Love" in any case (case-insensitive).
+SELECT 
+	title
+	
+FROM film
+WHERE title ILIKE '%love%'
+
 
 
 
