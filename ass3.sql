@@ -64,6 +64,15 @@ WHERE rental_rate > 4
 ORDER BY rental_rate DESC
 
 
+--Display the titles of the 5 longest movies.
+SELECT 
+	title,
+	length
+
+FROM film
+ORDER BY length DESC
+LIMIT 5
+
 
 
 
