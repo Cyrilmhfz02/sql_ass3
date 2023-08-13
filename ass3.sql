@@ -39,6 +39,14 @@ FROM film
 WHERE title ILIKE '%love%'
 
 
+--Display the title of movies in uppercase and their description in lowercase.
+SELECT 
+	UPPER(title) AS Upper_title,
+	LOWER(description) AS Lower_desc
+	
+FROM film
+
+
 
 
 
