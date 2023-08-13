@@ -46,6 +46,15 @@ SELECT
 	
 FROM film
 
+--Retrieve the first name and last name of customers whose last name starts with "A" and their first name contains "e" or "E"
+SELECT 
+	first_name,
+	last_name
+
+FROM customer
+WHERE last_name LIKE 'A%' AND first_name ILIKE '%e%'
+
+
 
 
 
