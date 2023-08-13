@@ -74,6 +74,15 @@ ORDER BY length DESC
 LIMIT 5
 
 
+--Find the titles of movies that have "dog" anywhere in their title and were released before the year 2005.
+SELECT 
+	title,
+	release_year
+	
+FROM film
+WHERE title LIKE '%dog%' AND release_year <2005
+
+
 
 
 
