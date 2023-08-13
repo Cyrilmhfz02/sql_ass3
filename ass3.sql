@@ -55,6 +55,16 @@ FROM customer
 WHERE last_name LIKE 'A%' AND first_name ILIKE '%e%'
 
 
+--List the titles of movies with a rental rate greater than $4.00, ordered by rental rate in descending order.
+SELECT 
+	title,
+	rental_rate
+FROM film
+WHERE rental_rate > 4
+ORDER BY rental_rate DESC
+
+
+
 
 
 
