@@ -92,6 +92,13 @@ FROM customer
 WHERE last_name LIKE 'M%' AND (SUBSTRING(first_name, 2, 1) = 'a' OR SUBSTRING(first_name, 2, 1) = 'A')
 
 
+--Retrieve the titles of movies that contain the word "fantasy" and sort them in alphabetical order.
+SELECT 
+	title
+FROM film
+WHERE title LIKE '%fantasy%'
+ORDER BY title ASC
+
 
 
 
